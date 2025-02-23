@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: black;
+    color: white;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #ac3e3e;
+    font-weight: 800;
+    cursor: pointer;
+    /*  */
+    transition: 0.5s ease;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transform: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ac3e3e;
+    border-bottom: 3px solid #ac3e3e;
+}
+
+@media(max-width: 995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-bottom: 3px solid #ac3e3e;
+        border-left: 3px solid #ac3e3e;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #ac3e3e;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-image: url(./assets/image/smoke.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: #ac3e3e;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-Profileimg {
+    border-radius: 50%;
+}
+
+.home-Profileimg img {
+    position: relative;
+    width: 29vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #ac3e3e;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-Profileimg img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.home-socialIcon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #ac3e3e;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 2.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #f5a3a3;
+}
+
+.home-socialIcon a:hover {
+    color: black;
+    transform: scale(1.3)translateY(-5px);
+    background-color: #ac3e3e;
+    box-shadow: 0 0 25px #ac3e3e;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #ac3e3e;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #ac3e3e;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: #ac3e3e;
+    color: #000;
+    box-shadow: 0 0 25px #ac3e3e;
+}
+
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "Full-Stack Developer";
+    color: #ac3e3e;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    background-color: #00000000;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #000;
+    right: -8;
+    animation: cursor1 0.8s infinite;
+}
+
+@keyframes cursor1 {
+    to {
+        border-left: 3px solid #ac3e3e;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Front-End Developer";
+    }
+
+    21%,
+    40% {
+        content: "Back-End Developer";
+    }
+
+    41%,
+    60% {
+        content: "UX/UI Designer";
+    }
+
+    61%,
+    80% {
+        content: "Graphic Designer";
+    }
+
+    81%,
+    100% {
+        content: "Game Developer";
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem
+    }
+}
+
+@media (max-width: 995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-Profileimg img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+}
+
+
+/* End Home Section */
+
+/* Start Skills Section */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(./assets/image/wallpaper\ collection.gif);
+    background-size: cover;
+    background-position: center;    
+}
+
+.skills-content {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.skills-content h1 {
+    font-size: 5rem;   
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: #db2828;
+    font-weight: 1000;
+    letter-spacing: 0.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.animate-cursor {
+    content: "";
+    background-color: #00000000;
+    border-right: 3px solid #ffffff00;
+    animation: cursor2 0.8s infinite;
+}
+
+@keyframes cursor2 {
+    to {
+        border-right: 3px solid #ac3e3e;
+    }
+}
+
+.skills-FrontEnd h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #c4e96d;
+    border: 2px solid #000000;
+    border-radius:  0.5rem;
+    background-color: #f57fe1;
+    /* ป้องกันข้อความล้นออกนอกกรอบ */
+    overflow-wrap: break-word;
+}
+
+.skills-GraphicVideo h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #c4e96d;
+    border: 2px solid #000000;
+    border-radius:  0.5rem;
+    background-color: #f57fe1;
+    /* ป้องกันข้อความล้นออกนอกกรอบ */
+    overflow-wrap: break-word;
+}
+
+.skills-Database h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #c4e96d;
+    border: 2px solid #000000;
+    border-radius:  0.5rem;
+    background-color: #f57fe1;
+    /* ป้องกันข้อความล้นออกนอกกรอบ */
+    overflow-wrap: break-word;
+}
+
+.skills-unity h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #c4e96d;
+    border: 2px solid #000000;
+    border-radius:  0.5rem;
+    background-color: #f57fe1;
+    /* ป้องกันข้อความล้นออกนอกกรอบ */
+    overflow-wrap: break-word;
+}
+
+.bar {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border: 2px solid #000000;
+    border-radius: 0.5rem;
+    background-color: #161616;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills-img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 1rem;
+    justify-self: center;
+}
+
+@media (max-width: 1000px) {
+    .skills {
+        gap: 4rem
+    }
+}
+
+@media (max-width: 995px) {
+
+    .skills .skills-content h2{
+        font-size: 2.5rem;
+    }
+
+}
+
+/* End Skills */
+
+/* Start Experience */
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    object-fit: cover;
+    background-image: url(./assets/image/bgOffice.gif);
+    background-size: cover;
+}
+
+.experience-content{
+    background-color: #e09524;
+    border: 2px solid #000000;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 25px #ac3e3e;
+}
+
+.experience .experience-content h1 {
+    font-size: 3.8rem;
+    font-weight: 1000;
+    line-height: 1.3;
+}
+
+.experience-content p {
+    font-size: 1.6rem;
+}
+
+.experience-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.experience-img img {
+    position: relative;
+    margin-top: 5rem;
+    width: 40vw;
+    box-shadow: 0 0 25px solid #ac3e3e;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.experience-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.certificate-img {
+    width: 100%;  /* ปรับความกว้างให้เต็ม container */
+    height: auto; /* กำหนดความสูงให้เท่ากัน (ปรับได้ตามต้องการ) */
+    object-fit: cover; /* ตัดขอบภาพให้พอดีกับขนาด */
+    margin-bottom: 1rem;
+    justify-self: center;
+    border-radius: 0.5rem;
+}
+
+.upbit-img {
+    width: 100%;  /* ปรับความกว้างให้เต็ม container */
+    height: 50%; /* กำหนดความสูงให้เท่ากัน (ปรับได้ตามต้องการ) */
+    object-fit: cover; /* ตัดขอบภาพให้พอดีกับขนาด */
+    margin-bottom: 1rem;
+    justify-self: center;
+    border-radius: 0.5rem;
+}
+
+.Upbit{
+    color: #0453c9;
+}
+
+/* End Experience */
