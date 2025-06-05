@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+	<link rel='stylesheet' href='https://code.jquery.com/ui/jquery-ui-git.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="desktop-wrapper">
+		<div class="desktop">
+			<div class="grid grid-cols-2 gap-2">
+				<ul class="icon-wrapper">
+					<a href="#" data-window="Projects">
+						<li><img src="./assets/image/Folder.png" alt="" class="w-20 h-20">Projects</li>
+					</a>
+				</ul>
+				<ul class="icon-wrapper">
+					<a href="#" data-window="Resume">
+						<li><img src="./assets/image/File.png" alt="" class="w-20 h-20">Resume</li>
+					</a>
+				</ul>
+				<ul class="icon-wrapper">
+					<a href="#" data-window="experience">
+						<li><img src="./assets/image/Folderex.png" alt="" class="w-20 h-20">Experience</li>
+					</a>
+				</ul>
+				<ul class="icon-wrapper">
+					<a href="#" data-window="skills">
+						<li><img src="./assets/image/Admin Settings Male.png" alt="" class="w-20 h-20">Skills</li>
+					</a>
+				</ul>
+				<ul class="icon-wrapper">
+					<a href="#" data-window="education">
+						<li><img src="./assets/image/Education Folder.png" alt="" class="w-20 h-20">Education</li>
+					</a>
+				</ul>
+				<ul class="icon-wrapper">
+					<a href="#" data-window="contacts">
+						<li><img src="./assets/image/Contact.png" alt="" class="w-20 h-20">Contacts</li>
+					</a>
+				</ul>
+			</div>
+			<input id="start-menu" type="checkbox" />
+			<ul class="start-menu">
+				<a href="#" data-window="portrait">
+					<li><i class="fa-solid fa-moon fa-2xl"></i> Sleep</li>
+				</a>
+				<a href="#" data-window="portrait">
+					<li><i class="fa-solid fa-power-off fa-2xl"></i> Shutdown</li>
+				</a>
+				<a href="#" data-window="dienstleistungen">
+					<li><i class="fa-solid fa-rotate-left fa-2xl"></i> Restart</li>
+				</a>
+			</ul>
+		</div>
+
+		<div class="bottom-bar">
+			<label for="start-menu" class="button"><img src="./assets/image/windows-icon.png" alt=""
+					class="w-10 h15"></label>
+			<div id="time"></div>
+		</div>
+
+		<div class="window" id="Projects">
+			<div class="window-bar">
+				<div class="window-title">
+					<img src="https://res.cloudinary.com/theyve/image/upload/v1517565728/Trinkler/user.png" alt="">
+					Portrait
+				</div>
+				<div class="button-close close-button">&times;</div>
+			</div>
+			<div class="window-inner">
+				<div class="content-title">
+					<h1>Portrait</h1>
+					<p class="lead">Seit 2011 ist Simon Trinkler als leidenschaftlicher Mediator zwischen Mensch und
+						Maschine, im Namen seiner Einzelfirma Trinkler IT Service, tätig.</p>
+				</div>
+				<p>Simons Faszination für die digitale Welt nahm seinen Anfang vor einem Vierteljahrhundert mit Windows
+					3.1 und dessen Zeichnungsprogramm Paint. Nach schroffer Kritik an seinen Kunstwerken gestand er sich
+					im zarten Alter von acht ein, dass es eher schwierig werden dürfte, sich mit derartigen Kunstwerken
+					langfristig über Wasser zu halten. Tief im Herz glühte jedoch noch immer die Liebe zu Maus und
+					Tastatur.</p>
+				<p>Mit dem Einzug des Internets wurde Simon vom verkappten Picasso zum furchtlosen Piraten Barbarossa
+					der durch Filesharing-Portale strich auf der Suche nach guter Musik und in Kinos abgefilmten
+					Blockbustern. Als moderner Robin Hood versorgte er die technisch wenig bewanderten per MSN Messenger
+					mit Musik.</p>
+				<p>Diese Jahre prägten Simon: Die Freudentränen der Beschenkten nährten seinen Geist.</p>
+				<p>Nach seiner Ausbildung zum Informatiker wusste Simon: Er will seine Macht der Comuterbändigung dazu
+					nutzen, den Leuten die Liebe zur Technologie näher zu bringen.</p>
+			</div>
+		</div>
+		<div class="window" id="experience">
+			<div class="window-bar">
+				<div class="window-title">
+					<img src="./assets/image/Folderex.png" alt="" class="w-5 h-5">
+					Experience
+				</div>
+				<div class="button-close close-button">&times;</div>
+			</div>
+			<div class="window-inner">
+				<div class="content-title">
+					<h1>Internship at Upbit Exchange (Thailand) Co., Ltd.</h1>
+					<p class="lead">September - December 2024</p>
+				</div>
+				<div class="grid grid-cols-1 gap-3">
+					<p>During my internship at Upbit, I assisted in designing and developing educational materials on IT
+						security. Additionally, I contributed to risk management planning for handling risks in everyday
+						life.</p>
+					<div class="col-span-2">
+						<img src="../assets/image/certificate.jpg" alt="" class="certificate-img">
+						<div class="grid grid-cols-2 gap-4">
+							<img src="../assets/image/upbit1.jpg" alt="" class="upbit-img">
+							<img src="../assets/image/upbit2.jpg" alt="" class="upbit-img">
+						</div>
+						<span class="animate-cursor"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="window" id="education">
+			<div class="window-bar">
+				<div class="window-title">
+					<img src="./assets/image/Education Folder.png" alt="">
+					Education
+				</div>
+				<div class="button-close close-button">&times;</div>
+			</div>
+			<div class="window-inner">
+				<div class="content-title">
+					<h1>Education</h1>
+				</div>
+				<div class="grid grid-cols-2 gap-3">
+					<p>During my internship at Upbit, I assisted in designing and developing educational materials on IT
+						security. Additionally, I contributed to risk management planning for handling risks in everyday
+						life.</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="window" id="Resume">
+			<div class="window-bar">
+				<div class="window-title">
+					<img src="./assets/image/File.png" alt="" class="w-5 h-5">
+					Resume
+				</div>
+				<div class="button-close close-button">&times;</div>
+			</div>
+			<div class="window-inner">
+				<div class="content-title">
+					<h1><span class="animate-cursor">Resume</span></h1>
+				</div>
+				<img src="./assets/image/Resume_Ravidanai-Uthairat.png" alt="" class="resume-img">
+			</div>
+		</div>
+		<div class="window" id="skills">
+			<div class="window-bar">
+				<div class="window-title">
+					<img src="./assets/image/Admin Settings Male.png" alt="" class="w-5 h-5">
+					Skills
+				</div>
+				<div class="button-close close-button">&times;</div>
+			</div>
+			<div class="window-inner">
+				<div class="content-title">
+					<h1>Skills</h1>
+					<p class="lead">This is what I can do</p>
+				</div>
+				<div class="service-wrapper">
+					<div class="service">
+						<div class="service-image">
+							<img src="./assets/image/GraphicVideo.png" alt="" class="w-40 h-40">
+						</div>
+						<div class="service-copy">
+							<h2>Graphic & Video</h2>
+							<ul>
+								<li>Adobe Photoshop</li>
+								<li>Adobe Premiere</li>
+								<li>CapCut</li>
+								<li>Canva</li>
+								<li>Figma</li>
+								<li>Blender</li>
+							</ul>
+						</div>
+					</div>
+					<div class="service">
+						<div class="service-image">
+							<img src="./assets/image/programming.png" alt="" class="w-40 h-40">
+						</div>
+						<div class="service-copy">
+							<h2>Developer</h2>
+							<ul>
+								<li>HTML</li>
+								<li>JavaScript</li>
+								<li>Css</li>
+								<li>Swift</li>
+							</ul>
+						</div>
+					</div>
+					<div class="service">
+						<div class="service-image">
+							<img src="./assets/image/database.png" alt="" class="w-40 h-40">
+						</div>
+						<div class="service-copy">
+							<h2>Database</h2>
+							<ul>
+								<li>MySQL</li>
+								<li>MongoDB</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="window" id="contacts">
+			<div class="window-bar">
+				<div class="window-title">
+					<img src="https://res.cloudinary.com/theyve/image/upload/v1517565728/Trinkler/user.png" alt="">
+					Portrait
+				</div>
+				<div class="button-close close-button">&times;</div>
+			</div>
+			<div class="window-inner">
+				<div class="content-title">
+					<h1>Portrait</h1>
+					<p class="lead">Seit 2011 ist Simon Trinkler als leidenschaftlicher Mediator zwischen Mensch und
+						Maschine, im Namen seiner Einzelfirma Trinkler IT Service, tätig.</p>
+				</div>
+				<p>Simons Faszination für die digitale Welt nahm seinen Anfang vor einem Vierteljahrhundert mit Windows
+					3.1 und dessen Zeichnungsprogramm Paint. Nach schroffer Kritik an seinen Kunstwerken gestand er sich
+					im zarten Alter von acht ein, dass es eher schwierig werden dürfte, sich mit derartigen Kunstwerken
+					langfristig über Wasser zu halten. Tief im Herz glühte jedoch noch immer die Liebe zu Maus und
+					Tastatur.</p>
+				<p>Mit dem Einzug des Internets wurde Simon vom verkappten Picasso zum furchtlosen Piraten Barbarossa
+					der durch Filesharing-Portale strich auf der Suche nach guter Musik und in Kinos abgefilmten
+					Blockbustern. Als moderner Robin Hood versorgte er die technisch wenig bewanderten per MSN Messenger
+					mit Musik.</p>
+				<p>Diese Jahre prägten Simon: Die Freudentränen der Beschenkten nährten seinen Geist.</p>
+				<p>Nach seiner Ausbildung zum Informatiker wusste Simon: Er will seine Macht der Comuterbändigung dazu
+					nutzen, den Leuten die Liebe zur Technologie näher zu bringen.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <div class="overlay"></div> -->
+	</div>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+	<script src="./src/js/main.js"></script>
+
+</body>
+
+</html>

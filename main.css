@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    image-rendering: crisp-edges;
+}
+
+html {
+    font-size: 10px;
+}
+
+@media (min-width: 450px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+body {
+    font-family: "Press Start 2P";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+p.lead {
+    color: #004264;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+p {
+    max-width: 54ch;
+}
+
+p+p {
+    margin-top: 1em;
+}
+
+p.lead {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: default;
+}
+
+li img {
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    color: #121212;
+    align-items: center;         /* แนวตั้ง */
+    justify-content: center;     /* แนวนอน */
+    width: 48px;
+    height: 48px;
+
+}
+
+.button img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.button:hover {
+    background-color: rgba(245, 245, 245, 0.062);
+    border-radius: 5px;
+    justify-content: center; /* Hover แล้วอยู่ตรงกลาง */
+}
+
+.button:active {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button-close:hover {
+    background-color: rgba(255, 0, 0, 0.699);
+    border-radius: 5px;
+}
+
+
+.desktop-wrapper {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./assets/image/bgOffice.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.desktop {
+    position: relative;
+    flex-grow: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 50px);
+}
+
+@media screen and (min-width: 309px) {
+    .desktop {
+        background-size: auto;
+    }
+}
+
+.bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a0a0af3;
+    padding: 0.5rem 1rem;
+}
+
+.bottom-bar label>img {
+    margin-left: -0.33ch;
+    margin-right: 0.5ch;
+}
+
+.bottom-bar .status {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-bar .status .sound {
+    cursor: pointer;
+}
+
+.bottom-bar .status #time {
+    padding: 0.5rem;
+}
+
+.start-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    background-color: #dbdbdb;
+    margin: 0;
+    padding: 0;
+    z-index: 800;
+    box-shadow: inset -2px 0 rgba(18, 18, 18, 0.25), inset 2px 0 rgba(255, 255, 255, 0.5);
+    display: none;
+    border-radius: 0 1rem 0 0;
+}
+
+.start-menu>a {
+    color: #121212;
+    display: block;
+    padding: 2rem 4rem;
+    margin: 0 2px;
+    border-bottom: 2px solid rgba(18, 18, 18, 0.15);
+}
+
+.start-menu>a:first-child {
+    margin-top: 2px;
+}
+
+.start-menu>a:hover {
+    background-color: #004264;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.start-menu>a:active {
+    outline: 1px dotted #121212;
+}
+
+input#start-menu {
+    display: none;
+}
+
+input#start-menu:checked+.start-menu {
+    display: block;
+}
+
+#time {
+    color: #dbdbdb;
+    margin-right: 0.5rem;
+}
+
+.icon-wrapper {
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+    width: 10em;
+    height: 10em;
+    display: inline-flex;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    /* ทำให้ขอบโค้งเล็กน้อย */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.icon-wrapper:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* พื้นหลังโปร่งแสง */
+}
+
+.window {
+    display: none;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    width: calc(100% - 5vh*2);
+    height: calc(100% - 5vh*2 - 50px);
+    max-height: calc(100% - 5vh*2 - 50px);
+    background: #fff;
+    padding: 4px;
+    background: #dbdbdb;
+    box-shadow: inset -2px -2px rgba(18, 18, 18, 0.25), inset 2px 2px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .window {
+        width: 50vw;
+    }
+}
+
+.window .window-bar {
+    background: #004264;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5ch;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.window .window-bar .window-title {
+    display: flex;
+    align-items: center;
+}
+
+.window .window-bar .window-title>img {
+    margin-right: 0.5ch;
+}
+
+.window .window-bar:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.window .window-bar .close-button {
+    cursor: default;
+    padding: 0.5em;
+    margin: -0.25ch;
+}
+
+.window .window-inner {
+    position: absolute;
+    height: calc(100% - 3em - 4px*2);
+    width: calc(100% - 4px*2);
+    background: #fff;
+    padding: 1.75rem;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content-title {
+    margin-bottom: 1rem;
+}
+
+.service-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.service-wrapper .service {
+    padding: 1rem;
+    min-width: 320px;
+    width: 50%;
+}
+
+.service-wrapper .service .service-image {
+    margin-bottom: 1rem;
+}
+
+.service-wrapper .service .service-copy ul {
+    list-style: url(https://res.cloudinary.com/theyve/image/upload/v1517574656/Trinkler/checkmark.png) outside;
+    padding-left: 1.25rem;
+}
+
+.service-wrapper .service .service-copy ul li {
+    margin: 0.5em 0;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+}
+
+.resume-img {
+    width: 100%;
+    height: auto;
+
+}
+
+.animate-cursor {
+    content: "";
+    background-color: #00000000;
+    border-left: 3px solid #ffffff00;
+    animation: cursor2 0.8s infinite;
+}
+
+@keyframes cursor2 {
+    to {
+        border-right: 3px solid #000000;
+    }
+}
+
+/* .overlay {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  background: repeating-linear-gradient(rgba(255, 255, 255, 0.25) 0, transparent 1px, transparent 3px, rgba(18, 18, 18, 0.25) 4px);
+  width: 100vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 999;
+  -webkit-animation: buzz 1000ms linear infinite;
+          animation: buzz 1000ms linear infinite;
+  mix-blend-mode: hard-light;
+}
+
+@-webkit-keyframes buzz {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes buzz {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+} */
+
+.certificate-img {
+    width: 100%;
+    /* ปรับความกว้างให้เต็ม container */
+    height: auto;
+    /* กำหนดความสูงให้เท่ากัน (ปรับได้ตามต้องการ) */
+    object-fit: cover;
+    /* ตัดขอบภาพให้พอดีกับขนาด */
+    margin-bottom: 1rem;
+    justify-self: center;
+    border-radius: 0.5rem;
+}
+
+.upbit-img {
+    width: 100%;
+    /* ปรับความกว้างให้เต็ม container */
+    height: 50%;
+    /* กำหนดความสูงให้เท่ากัน (ปรับได้ตามต้องการ) */
+    object-fit: cover;
+    /* ตัดขอบภาพให้พอดีกับขนาด */
+    margin-bottom: 1rem;
+    justify-self: center;
+    border-radius: 0.5rem;
+}
