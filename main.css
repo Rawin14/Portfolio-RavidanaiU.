@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 *,
 *:after,
@@ -13,9 +13,10 @@ html {
 
 @media (min-width: 450px) {
     html {
-        font-size: 13px;
+        font-size: 18px;
     }
 }
+
 
 body {
     font-family: "Press Start 2P";
@@ -23,6 +24,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
     line-height: 1.7;
+}
+
+.Textbold {
+    font-weight: bold;
+    text-shadow:#000 0.3em 0.3em 0.5em;
+    -webkit-text-stroke: 0.1px #000;
 }
 
 h1,
@@ -68,8 +75,8 @@ li img {
     color: #121212;
     align-items: center;         /* แนวตั้ง */
     justify-content: center;     /* แนวนอน */
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
 
 }
 
@@ -191,7 +198,7 @@ li img {
 }
 
 .start-menu>a:hover {
-    background-color: #004264;
+    background-color: #363636;
     color: #fff;
     border-radius: 1rem;
 }
