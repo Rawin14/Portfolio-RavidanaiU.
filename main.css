@@ -415,3 +415,9 @@ input#start-menu:checked+.start-menu {
     justify-self: center;
     border-radius: 0.5rem;
 }
+
+.education-img {
+    width: 8rem;
+    height: auto;
+    ;
+}
