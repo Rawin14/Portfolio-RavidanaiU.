@@ -8,6 +8,7 @@
 	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 	<link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
 	<link rel='stylesheet' href='https://code.jquery.com/ui/jquery-ui-git.css'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="./main.css">
 
@@ -20,32 +21,37 @@
 			<div class="grid grid-cols-2 gap-2">
 				<ul class="icon-wrapper">
 					<a href="#" data-window="Projects">
-						<li><img src="./assets/image/Folder.png" alt="" class="w-20 h-20">Projects</li>
+						<li class="font-name"><img src="./assets/image/Folder.png" alt="" class="w-20 h-20">Projects
+						</li>
 					</a>
 				</ul>
 				<ul class="icon-wrapper">
 					<a href="#" data-window="Resume">
-						<li><img src="./assets/image/File.png" alt="" class="w-20 h-20">Resume</li>
+						<li class="font-name"><img src="./assets/image/File.png" alt="" class="w-20 h-20">Resume</li>
 					</a>
 				</ul>
 				<ul class="icon-wrapper">
 					<a href="#" data-window="experience">
-						<li><img src="./assets/image/Folderex.png" alt="" class="w-20 h-20">Experience</li>
+						<li class="font-name"><img src="./assets/image/Folderex.png" alt="" class="w-20 h-20">Experience
+						</li>
 					</a>
 				</ul>
 				<ul class="icon-wrapper">
 					<a href="#" data-window="skills">
-						<li><img src="./assets/image/Admin Settings Male.png" alt="" class="w-20 h-20">Skills</li>
+						<li class="font-name"><img src="./assets/image/Admin Settings Male.png" alt=""
+								class="w-20 h-20">Skills</li>
 					</a>
 				</ul>
 				<ul class="icon-wrapper">
 					<a href="#" data-window="education">
-						<li><img src="./assets/image/Education Folder.png" alt="" class="w-20 h-20">Education</li>
+						<li class="font-name"><img src="./assets/image/Education Folder.png" alt=""
+								class="w-20 h-20">Education</li>
 					</a>
 				</ul>
 				<ul class="icon-wrapper">
 					<a href="#" data-window="contacts">
-						<li><img src="./assets/image/Contact.png" alt="" class="w-20 h-20">Contacts</li>
+						<li class="font-name"><img src="./assets/image/Contact.png" alt="" class="w-20 h-20">Contacts
+						</li>
 					</a>
 				</ul>
 			</div>
@@ -66,35 +72,91 @@
 		<div class="bottom-bar">
 			<label for="start-menu" class="button"><img src="./assets/image/windows-icon.png" alt=""
 					class="w-10 h15"></label>
-			<div id="time"></div>
+			<div class="time-container">
+				<div id="time"></div>
+				<div id="date"></div>
+			</div>
 		</div>
 
 		<div class="window" id="Projects">
 			<div class="window-bar">
 				<div class="window-title">
-					<img src="https://res.cloudinary.com/theyve/image/upload/v1517565728/Trinkler/user.png" alt="">
-					Portrait
+					<img src="./assets/image/Folder.png" alt="">
+					Projects
 				</div>
 				<div class="button-close close-button">&times;</div>
 			</div>
 			<div class="window-inner">
-				<div class="content-title">
-					<h1>Portrait</h1>
-					<p class="lead">Seit 2011 ist Simon Trinkler als leidenschaftlicher Mediator zwischen Mensch und
-						Maschine, im Namen seiner Einzelfirma Trinkler IT Service, tätig.</p>
-				</div>
-				<p>Simons Faszination für die digitale Welt nahm seinen Anfang vor einem Vierteljahrhundert mit Windows
-					3.1 und dessen Zeichnungsprogramm Paint. Nach schroffer Kritik an seinen Kunstwerken gestand er sich
-					im zarten Alter von acht ein, dass es eher schwierig werden dürfte, sich mit derartigen Kunstwerken
-					langfristig über Wasser zu halten. Tief im Herz glühte jedoch noch immer die Liebe zu Maus und
-					Tastatur.</p>
-				<p>Mit dem Einzug des Internets wurde Simon vom verkappten Picasso zum furchtlosen Piraten Barbarossa
-					der durch Filesharing-Portale strich auf der Suche nach guter Musik und in Kinos abgefilmten
-					Blockbustern. Als moderner Robin Hood versorgte er die technisch wenig bewanderten per MSN Messenger
-					mit Musik.</p>
-				<p>Diese Jahre prägten Simon: Die Freudentränen der Beschenkten nährten seinen Geist.</p>
-				<p>Nach seiner Ausbildung zum Informatiker wusste Simon: Er will seine Macht der Comuterbändigung dazu
-					nutzen, den Leuten die Liebe zur Technologie näher zu bringen.</p>
+				<section class="projects-section">
+					<div class="projects-header">
+						<i class="fas fa-folder-open"></i>
+						<h2 class="projects-title">My Projects</h2>
+					</div>
+
+					<div class="project-gallery">
+
+						<div class="project-card">
+							<div class="project-image-container">
+								<img src="https://via.placeholder.com/400x300.png/C39BD3/FFFFFF?text=Project+Image"
+									alt="ภาพตัวอย่างโปรเจกต์ 1">
+								<div class="project-overlay">
+									<a href="#" class="project-link" target="_blank" title="ดูเว็บไซต์จริง"><i
+											class="fas fa-external-link-alt"></i></a>
+									<a href="#" class="project-link" target="_blank" title="ดูโค้ดบน GitHub"><i
+											class="fab fa-github"></i></a>
+								</div>
+							</div>
+							<div class="project-info">
+								<h3 class="project-title">Portfolio Website</h3>
+								<p class="project-description">เว็บไซต์แสดงผลงานส่วนตัวที่ออกแบบและพัฒนาด้วยตนเอง</p>
+								<div class="project-tags">
+									<span class="tag">HTML</span>
+									<span class="tag">CSS</span>
+									<span class="tag">JavaScript</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="project-card">
+							<div class="project-image-container">
+								<img src="https://via.placeholder.com/400x300.png/85C1E9/FFFFFF?text=Project+Image"
+									alt="ภาพตัวอย่างโปรเจกต์ 2">
+								<div class="project-overlay">
+									<a href="#" class="project-link" target="_blank" title="ดูงานใน Figma"><i
+											class="fab fa-figma"></i></a>
+								</div>
+							</div>
+							<div class="project-info">
+								<h3 class="project-title">Mobile App Design</h3>
+								<p class="project-description">ออกแบบ UI/UX สำหรับแอปพลิเคชันจองร้านอาหารบนมือถือ</p>
+								<div class="project-tags">
+									<span class="tag">Figma</span>
+									<span class="tag">UI/UX</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="project-card">
+							<div class="project-image-container">
+								<img src="https://via.placeholder.com/400x300.png/F5B041/FFFFFF?text=Project+Image"
+									alt="ภาพตัวอย่างโปรเจกต์ 3">
+								<div class="project-overlay">
+									<a href="#" class="project-link" target="_blank" title="ดูโค้ดบน GitHub"><i
+											class="fab fa-github"></i></a>
+								</div>
+							</div>
+							<div class="project-info">
+								<h3 class="project-title">iOS Application</h3>
+								<p class="project-description">แอปพลิเคชันสำหรับบันทึกค่าใช้จ่าย พัฒนาด้วย Swift</p>
+								<div class="project-tags">
+									<span class="tag">Swift</span>
+									<span class="tag">Xcode</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
 			</div>
 		</div>
 		<div class="window" id="experience">
@@ -134,14 +196,23 @@
 				<div class="button-close close-button">&times;</div>
 			</div>
 			<div class="window-inner">
-				<div class="content-title">
-					<h1>Education</h1>
+				<div class="background-card">
+					<div class="flex justify-between items-center gap-3">
+						<div class="content-title">
+							<h1>Bangkapi School</h1>
+							<p>May 2015 - March 2022</p>
+						</div>
+						<img src="../assets/image/bangkapilogo.png" alt="" class="education-img">
+					</div>
 				</div>
-				<div class="grid grid-cols-2 gap-3">
-					<p>During my internship at Upbit, I assisted in designing and developing educational materials on IT
-						security. Additionally, I contributed to risk management planning for handling risks in everyday
-						life.</p>
-
+				<div class="background-card">
+					<div class="flex justify-between items-center gap-3 mt-4">
+						<div class="content-title">
+							<h1>Srinakharinwirot University</h1>
+							<p>August 2022 - Present</p>
+						</div>
+						<img src="../assets/image/swulogo.png" alt="" class="education-img">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -154,9 +225,9 @@
 				<div class="button-close close-button">&times;</div>
 			</div>
 			<div class="window-inner">
-				<div class="content-title">
+				<!-- <div class="content-title">
 					<h1><span class="animate-cursor">Resume</span></h1>
-				</div>
+				</div> -->
 				<img src="./assets/image/Resume_Ravidanai-Uthairat.png" alt="" class="resume-img">
 			</div>
 		</div>
@@ -169,53 +240,51 @@
 				<div class="button-close close-button">&times;</div>
 			</div>
 			<div class="window-inner">
-				<div class="content-title">
-					<h1>Skills</h1>
-					<p class="lead">This is what I can do</p>
-				</div>
 				<div class="service-wrapper">
-					<div class="service">
-						<div class="service-image">
-							<img src="./assets/image/GraphicVideo.png" alt="" class="w-40 h-40">
+					<section class="skills-section">
+						<h2 class="section-title">My Skills</h2>
+						<div class="skills-container">
+
+							<div class="skill-card">
+								<div class="skill-icon-wrapper">
+									<i class="fas fa-magic fa-2x"></i>
+								</div>
+								<h3 class="skill-title">Graphic & Video</h3>
+								<ul class="skill-list">
+									<li><i class="devicon-photoshop-plain"></i> Adobe Photoshop</li>
+									<li><i class="devicon-premierepro-plain"></i> Adobe Premiere</li>
+									<li><i class="devicon-canva-original"></i> Canva</li>
+									<li><i class="devicon-figma-plain"></i> Figma</li>
+									<li><i class="devicon-blender-original"></i> Blender</li>
+								</ul>
+							</div>
+
+							<div class="skill-card">
+								<div class="skill-icon-wrapper">
+									<i class="fas fa-code fa-2x"></i>
+								</div>
+								<h3 class="skill-title">Developer</h3>
+								<ul class="skill-list">
+									<li><i class="devicon-html5-plain"></i> HTML</li>
+									<li><i class="devicon-javascript-plain"></i> JavaScript</li>
+									<li><i class="devicon-css3-plain"></i> Css</li>
+									<li><i class="devicon-swift-plain"></i> Swift</li>
+								</ul>
+							</div>
+
+							<div class="skill-card">
+								<div class="skill-icon-wrapper">
+									<i class="fas fa-database fa-2x"></i>
+								</div>
+								<h3 class="skill-title">Database</h3>
+								<ul class="skill-list">
+									<li><i class="devicon-mysql-plain-wordmark"></i> MySQL</li>
+									<li><i class="devicon-mongodb-plain-wordmark"></i> MongoDB</li>
+								</ul>
+							</div>
+
 						</div>
-						<div class="service-copy">
-							<h2>Graphic & Video</h2>
-							<ul>
-								<li>Adobe Photoshop</li>
-								<li>Adobe Premiere</li>
-								<li>CapCut</li>
-								<li>Canva</li>
-								<li>Figma</li>
-								<li>Blender</li>
-							</ul>
-						</div>
-					</div>
-					<div class="service">
-						<div class="service-image">
-							<img src="./assets/image/programming.png" alt="" class="w-40 h-40">
-						</div>
-						<div class="service-copy">
-							<h2>Developer</h2>
-							<ul>
-								<li>HTML</li>
-								<li>JavaScript</li>
-								<li>Css</li>
-								<li>Swift</li>
-							</ul>
-						</div>
-					</div>
-					<div class="service">
-						<div class="service-image">
-							<img src="./assets/image/database.png" alt="" class="w-40 h-40">
-						</div>
-						<div class="service-copy">
-							<h2>Database</h2>
-							<ul>
-								<li>MySQL</li>
-								<li>MongoDB</li>
-							</ul>
-						</div>
-					</div>
+					</section>
 				</div>
 
 			</div>
@@ -249,6 +318,7 @@
 			</div>
 		</div>
 	</div>
+
 
 
 	<!-- <div class="overlay"></div> -->
