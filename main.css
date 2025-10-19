@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-=======
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
->>>>>>> ab25289 (update-2)
 
 *,
 *:after,
@@ -79,13 +75,8 @@ li img {
     color: #121212;
     align-items: center;         /* แนวตั้ง */
     justify-content: center;     /* แนวนอน */
-<<<<<<< HEAD
-    width: 36px;
-    height: 36px;
-=======
     width: 48px;
     height: 40px;
->>>>>>> ab25289 (update-2)
 
 }
 
@@ -403,11 +394,6 @@ input#start-menu:checked+.start-menu {
 }
 
 .education-img {
-<<<<<<< HEAD
-    width: 8rem;
-    height: auto;
-    ;
-=======
     width: 328px;
     height: 328px;
     justify-self: center;
@@ -646,5 +632,4 @@ input#start-menu:checked+.start-menu {
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 600;
->>>>>>> ab25289 (update-2)
 }
