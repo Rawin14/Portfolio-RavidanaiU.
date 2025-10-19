@@ -13,13 +13,13 @@ html {
 
 @media (min-width: 450px) {
     html {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
 
 body {
-    font-family: "Press Start 2P";
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
@@ -215,12 +215,8 @@ input#start-menu:checked+.start-menu {
   flex-direction: column; /* จัดเรียงเป็นแนวตั้ง */
   align-items: center;
   margin-left: auto;
-  margin-right: 1rem; /* mr-4 */
+  margin-right: 0.5rem; /* mr-4 */
   color: white;
-}
-
-#time {
-  justify-content: center;
 }
 
 .icon-wrapper {
@@ -317,6 +313,13 @@ input#start-menu:checked+.start-menu {
 
 .content-title {
     margin-bottom: 1rem;
+}
+
+.School-font {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .service-wrapper {
