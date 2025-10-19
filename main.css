@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+=======
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+>>>>>>> ab25289 (update-2)
 
 *,
 *:after,
@@ -41,11 +45,11 @@ p.lead {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 18px;
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 16px;
 }
 
 p {
@@ -75,21 +79,20 @@ li img {
     color: #121212;
     align-items: center;         /* แนวตั้ง */
     justify-content: center;     /* แนวนอน */
+<<<<<<< HEAD
     width: 36px;
     height: 36px;
+=======
+    width: 48px;
+    height: 40px;
+>>>>>>> ab25289 (update-2)
 
-}
-
-.button img {
-    display: block;
-    margin: 0;
-    padding: 0;
 }
 
 .button:hover {
     background-color: rgba(245, 245, 245, 0.062);
     border-radius: 5px;
-    justify-content: center; /* Hover แล้วอยู่ตรงกลาง */
+    justify-content: center;
 }
 
 .button:active {
@@ -124,7 +127,7 @@ li img {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url("./assets/image/bgOffice.gif");
+    background-image: url("./assets/image/bg1.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -149,7 +152,7 @@ li img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #0a0a0af3;
+    background-color: #0a0a0a6c;
     padding: 0.5rem 1rem;
 }
 
@@ -215,9 +218,18 @@ input#start-menu:checked+.start-menu {
     display: block;
 }
 
+
+.time-container {
+  display: flex;
+  flex-direction: column; /* จัดเรียงเป็นแนวตั้ง */
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem; /* mr-4 */
+  color: white;
+}
+
 #time {
-    color: #dbdbdb;
-    margin-right: 0.5rem;
+  justify-content: center;
 }
 
 .icon-wrapper {
@@ -236,7 +248,7 @@ input#start-menu:checked+.start-menu {
 }
 
 .icon-wrapper:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.63);
     /* พื้นหลังโปร่งแสง */
 }
 
@@ -251,6 +263,7 @@ input#start-menu:checked+.start-menu {
     background: #fff;
     padding: 4px;
     background: #dbdbdb;
+    border-radius: 10px;
     box-shadow: inset -2px -2px rgba(18, 18, 18, 0.25), inset 2px 2px rgba(255, 255, 255, 0.5);
     overflow: hidden;
 }
@@ -262,7 +275,8 @@ input#start-menu:checked+.start-menu {
 }
 
 .window .window-bar {
-    background: #004264;
+    background: #d46ecf;
+    border-radius: 5px 5px 0 0;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -275,10 +289,14 @@ input#start-menu:checked+.start-menu {
 .window .window-bar .window-title {
     display: flex;
     align-items: center;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .window .window-bar .window-title>img {
     margin-right: 0.5ch;
+    height: 36px;
+    width: 36px;
 }
 
 .window .window-bar:active {
@@ -360,38 +378,6 @@ input#start-menu:checked+.start-menu {
     }
 }
 
-/* .overlay {
-  position: fixed;
-  top: -100vh;
-  left: 0;
-  background: repeating-linear-gradient(rgba(255, 255, 255, 0.25) 0, transparent 1px, transparent 3px, rgba(18, 18, 18, 0.25) 4px);
-  width: 100vw;
-  height: 200vh;
-  pointer-events: none;
-  z-index: 999;
-  -webkit-animation: buzz 1000ms linear infinite;
-          animation: buzz 1000ms linear infinite;
-  mix-blend-mode: hard-light;
-}
-
-@-webkit-keyframes buzz {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100vh);
-  }
-}
-
-@keyframes buzz {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100vh);
-  }
-} */
-
 .certificate-img {
     width: 100%;
     /* ปรับความกว้างให้เต็ม container */
@@ -417,7 +403,248 @@ input#start-menu:checked+.start-menu {
 }
 
 .education-img {
+<<<<<<< HEAD
     width: 8rem;
     height: auto;
     ;
+=======
+    width: 328px;
+    height: 328px;
+    justify-self: center;
+}
+
+.background-card{
+    background: linear-gradient(to bottom, #de70ec, #f5b0ff);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.font-name{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.849);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+}
+.skills-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* ขีดเส้นใต้หัวข้อ */
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #C39BD3; /* สีม่วงเดียวกับธีม */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  border-radius: 2px;
+}
+
+/* ---- Container for Cards ---- */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* ทำให้การ์ดสูงเท่ากัน */
+  flex-wrap: wrap;
+  gap: 30px; /* ระยะห่างระหว่างการ์ด */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---- Skill Card Styling ---- */
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* เงาเบาๆ */
+  padding: 30px;
+  width: 320px;
+  text-align: left;
+  border-top: 5px solid #C39BD3; /* แถบสีม่วงด้านบน */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ---- Hover Effect ---- */
+.skill-card:hover {
+  transform: translateY(-10px); /* ขยับขึ้นเมื่อเมาส์ชี้ */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.skill-icon-wrapper {
+  color: #C39BD3; /* สีไอคอน */
+  margin-bottom: 20px;
+}
+
+.skill-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.skill-list i {
+  font-size: 1.5em; /* ปรับขนาดไอคอน */
+  margin-right: 12px;
+  vertical-align: middle; /* จัดให้อยู่กึ่งกลางข้อความ */
+  color: #555; /* ทำให้สีไอคอนไม่เด่นเกินไป */
+}
+
+/* พิเศษสำหรับไอคอนที่มีสีในตัว */
+.devicon-canva-original, 
+.devicon-blender-original {
+    color: initial; /* ใช้สีดั้งเดิมของไอคอน */
+}
+
+/* สำหรับโลโก้ที่เป็นรูปภาพ */
+.skill-list .skill-logo {
+  width: 128px;   /* กำหนดขนาดให้ใกล้เคียงกับไอคอนอื่น */
+  height: 128px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* ---- Variables (ตัวแปรสี) ---- */
+:root {
+  --theme-color: #C39BD3; /* สีม่วงธีมหลัก */
+  --text-dark: #333;
+  --text-light: #555;
+  --background-light: #F8F9FA;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.projects-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  background-color: var(--theme-color);
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+  color: white;
+}
+.fa-folder-open {
+  font-size: 32px;
+}
+.projects-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: auto 0 0 20px;
+  color: #000;
+}
+
+/* ---- Gallery Grid Layout ---- */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive Grid */
+  gap: 30px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: var(--card-shadow);
+}
+
+/* ---- Project Card Styling ---- */
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden; /* ทำให้ขอบมนมีผลกับรูปภาพ */
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project-image-container {
+  position: relative; /* สำคัญมากสำหรับ Hover Effect */
+}
+
+.project-image-container img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* ทำให้รูปภาพเต็มกรอบโดยไม่เสียสัดส่วน */
+  display: block;
+}
+
+/* ---- Hover Overlay ---- */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(142, 68, 173, 0.8); /* สีม่วงโปร่งแสง */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0; /* ซ่อนไว้เป็นค่าเริ่มต้น */
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1; /* แสดงเมื่อนำเมาส์มาวางบนการ์ด */
+}
+
+.project-link {
+  color: white;
+  font-size: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+  transform: scale(1.2);
+}
+
+/* ---- Project Info ---- */
+.project-info {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 10px 0;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* ---- Tech Tags ---- */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #f2e7f9; /* สีม่วงอ่อน */
+  color: #8E44AD; /* สีม่วงเข้ม */
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+>>>>>>> ab25289 (update-2)
 }
